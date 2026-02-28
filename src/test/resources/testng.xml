@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile Test Automation Suite" verbose="2" parallel="classes" thread-count="2">
+    
+    <listeners>
+        <listener class-name="com.mobiletest.tests.TestListener"/>
+    </listeners>
+    
+    <test name="Login Module Tests">
+        <classes>
+            <class name="com.mobiletest.tests.LoginTests"/>
+        </classes>
+    </test>
+    
+    <test name="Home Page Tests">
+        <classes>
+            <class name="com.mobiletest.tests.HomePageTests"/>
+        </classes>
+    </test>
+    
+    <test name="Signup Tests">
+        <classes>
+            <class name="com.mobiletest.tests.SignupTests"/>
+        </classes>
+    </test>
+    
+</suite>
